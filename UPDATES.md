@@ -4,7 +4,7 @@
 
 ## 同一份签名版本清单
 
-两仓库计划在 updates/stable.json 提供相同字节的清单。GitHub 使用 main 分支，Gitee 使用 master 分支。正式文件须在作者确认、两个真实附件均上传并下载核验后发布，本文件不是正式清单。
+两仓库在 updates/stable.json 提供相同字节的正式签名清单，Windows 当前版本 0.3.92（107），macOS 暂无公开版本。GitHub 使用 main 分支，Gitee 使用 master 分支。首次正式清单已在作者确认、两个真实附件上传并完成未登录下载哈希核验后发布。本文说明协议，不替代机器读取的清单。
 
 清单外层为 schema=1、key_id、base64 payload、base64 Ed25519 signature。签名覆盖 payload 解码后的原始UTF-8字节，避免不同JSON排版影响核验。软件内置公钥；私钥不随应用或仓库分发。
 

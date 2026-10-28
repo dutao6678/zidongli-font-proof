@@ -6,7 +6,15 @@
 
 ## 当前状态
 
-首次公开发行正在准备，尚未公开正式 EXE 或正式更新清单。请勿将仓库自动生成的“Source code ZIP”当作应用安装包；该 ZIP 仅包含本仓库的公开资料。
+Windows **0.3.92（107）** 已公开发行。
+
+[GitHub 下载 EXE](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.92/ZidongliFontProof-Windows-x64.exe) · [Gitee 下载 EXE](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.92/%E5%AD%97%E5%8A%A8%E5%8A%9B%E5%AD%97%E4%BD%93%E6%A0%A1%E5%AF%B9.exe)
+
+大小：48,929,466 字节；两个渠道文件内容相同，均已完成未登录下载和 SHA256 核验。GitHub 附件名为 `ZidongliFontProof-Windows-x64.exe`，Gitee 为 `字动力字体校对.exe`。
+
+SHA256：`94df6bd0ea69190370484d5fb6ec980ad12d4eb150aafa7da15e67d11c541a05`
+
+请勿将仓库自动生成的“Source code ZIP”当作应用安装包；该 ZIP 仅包含本仓库的公开资料。
 
 ## 官方渠道
 
@@ -26,11 +34,11 @@
 
 ## Windows 支持范围
 
-计划提供 x64 单文件 EXE，非安装器，内置运行环境，运行时可解压至系统临时目录。已在 Windows 11 26100 验证指定功能；Windows 10 1809 x64 为依赖下限，尚未在最低系统或无开发环境干净机器完整实测。尚无 Windows ARM64 原生包。程序暂未进行 Authenticode 代码签名；清单签名和代码签名是不同事项。实体打印仍待设备验收。
+提供 x64 单文件 EXE，非安装器，内置运行环境，运行时可解压至系统临时目录。已在 Windows 11 26100 验证指定功能；Windows 10 1809 x64 为依赖下限，尚未在最低系统或无开发环境干净机器完整实测。尚无 Windows ARM64 原生包。程序暂未进行 Authenticode 代码签名；清单签名和代码签名是不同事项。实体打印仍待设备验收。
 
 ## 更新方式
 
-从“帮助 → 检查更新”主动发起。正式发行后由两个渠道提供签名版本清单，浏览器下载完整应用；保存工程并退出后再替换旧 EXE。本期不自动安装、不强制更新、不在启动时反复弹窗。macOS 未发行时不会推荐 Windows 文件。
+从“帮助 → 检查更新”主动发起。两个渠道提供同一份 Ed25519 签名版本清单，浏览器下载完整应用；保存工程并退出后再替换旧 EXE。本期不自动安装、不强制更新、不在启动时反复弹窗。macOS 未发行时不会推荐 Windows 文件。
 
 ## 资料许可
 
