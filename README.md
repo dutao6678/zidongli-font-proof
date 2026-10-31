@@ -47,11 +47,11 @@ TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 
 | 平台 | 当前正式版本 | GitHub 下载 | Gitee 下载 |
 |---|---|---|---|
 | Windows x64 | 0.3.92（107） | [独立 EXE](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.92/ZidongliFontProof-Windows-x64.exe) | [独立 EXE](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.92/%E5%AD%97%E5%8A%A8%E5%8A%9B%E5%AD%97%E4%BD%93%E6%A0%A1%E5%AF%B9.exe) |
-| macOS | 0.3.93（108） | [DMG](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.93/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.93/ZidongliFontProof-macOS-universal2.zip) | [DMG](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.93/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.93/ZidongliFontProof-macOS-universal2.zip) |
+| macOS | 0.3.112（127） | [DMG](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.112/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.112/ZidongliFontProof-macOS-universal2.zip) | [DMG](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.112/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.112/ZidongliFontProof-macOS-universal2.zip) |
 
 **Windows**：Windows 10 1809 x64 为依赖下限，已在 Windows 11 26100 x64 验证指定功能；最低系统、无开发环境干净机器及完整系统中文输入法仍待分别验收。尚无 Windows ARM64 原生包，EXE 尚未进行 Authenticode 代码签名。
 
-**macOS**：最低要求 **macOS 15.0**。提供 Universal 2 应用，已检查包内原生依赖的 arm64／x86_64 架构，并在 Apple Silicon／macOS 26.1 完成人工功能验收及 DMG 拖装、推出后独立启动验证。Intel Mac、macOS 15 实机、多屏及无开发环境干净机器尚未完整验收。
+**macOS**：最低要求 **macOS 15.0**。提供 Universal 2 应用，已检查包内原生依赖的 arm64／x86_64 架构，并在 Apple Silicon／macOS 26.1 完成人工界面验收和发行包完整性核验；具体安装与验证范围见本版发行说明。Intel Mac、macOS 15 实机、多屏及无开发环境干净机器尚未完整验收。
 
 **macOS 版本尚未完成 Developer ID 签名与 Apple 公证；目前仅通过 ad-hoc 签名完整性检查，DMG 也未签名／公证。** 实体打印仍待设备验收，打印预览不能代替实际出纸验证。更完整的兼容范围请查看各版本发行说明。
 
@@ -63,12 +63,12 @@ TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 
 
 - **Windows EXE**：48,929,466 字节。GitHub 文件名为 `ZidongliFontProof-Windows-x64.exe`，Gitee 为 `字动力字体校对.exe`。  
   SHA256：`94df6bd0ea69190370484d5fb6ec980ad12d4eb150aafa7da15e67d11c541a05`
-- **Mac DMG**：70,299,114 字节。  
-  SHA256：`ea56702398abf80e0b891149488f245a64131b74868fd60e4e473ce69e47c845`
-- **Mac ZIP**：70,445,097 字节。  
-  SHA256：`7a568c8518ac4d782e66accae096fb998a55beb700285d8bb2a37b041bba1581`
+- **Mac DMG**：70,653,451 字节。  
+  SHA256：`56d869ced9ab0f60c0c7e863b039becf27a8350d727af8d918a88e0886f00365`
+- **Mac ZIP**：70,842,584 字节。  
+  SHA256：`e22437bbf359d619e43a941f36e78823efbcc1f29ab24627b7ba82a07fd4d154`
 
-应用内“帮助 → 检查更新”读取正式签名清单；Mac 0.3.93 安装包已公开，Mac 更新清单尚待生产签名及发布，当前可从以上官方链接手动下载。清单签名与应用代码签名／Apple 公证是不同事项。
+应用内“帮助 → 检查更新”读取正式签名清单；Mac 0.3.112 安装包已公开，Mac 更新清单尚待生产签名及发布，当前可从以上官方链接手动下载。清单签名与应用代码签名／Apple 公证是不同事项。
 
 ## 使用说明与联系
 
