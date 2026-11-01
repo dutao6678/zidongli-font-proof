@@ -1,103 +1,68 @@
 # 字动力·字体校对
 
-**专为字体检查、问题标注和修改意见交接打造的本地校对工具。**
+**让每一个字，都经得起细看。**
 
-无需掌握专业字体设计软件，也能浏览字库、查找字符、圈出问题，并把修改意见整理交给字体设计师。
+专为字体设计师与字库校对工作打造的免费工具，支持 Windows 与 macOS。
 
-支持 **Windows 和 macOS**，免费使用，核心校对功能离线运行。
+## 软件下载
 
-## 浏览字库，更方便地发现问题
-
-支持打开 TTF、OTF 和 `.glyphs` 文件，通过字格浏览、多字搜索和校对状态筛选检查字形。提供参考字、简繁候选、Unicode 编码（U 码）和拼音等辅助信息，便于辨认和对照。
-
-参考信息受离线数据覆盖范围影响；简繁参考不会改变原始编码。部分 `.glyphs` 特殊结构暂不支持，智能部件尚未正式支持；请以应用提示和发行说明为准。
-
-## 直接在字形上标注修改意见
-
-提供文字、箭头、箭头文字框、矩形、椭圆、直线、弧线和自由画笔等批注工具。支持插入参考图片、调整位置及大小，方便对照笔画、结构和比例。
-
-通过校对状态与问题字总览，集中查看、定位和管理需要修改的字。应用提供人工校对工具，不自动判断字形对错。
-
-## 校对记录独立保存，保留原始字体
-
-应用以只读方式加载源字体，批注、备注及校对状态保存在独立的 **`.zproof` 工程文件**中，支持保存后继续校对，不直接修改原始字体。
-
-**工程默认不嵌入源字体；重新打开或交接工程时，请保留对应的字体文件。** 参考图片随工程嵌入保存。更新前请保存工程并妥善备份；应用回退不等于工程格式回退。
-
-## 导出结果，方便沟通与交接
-
-支持 **PDF、PNG、TXT 导出及打印预览**。
-
-TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 和图片可保留直观的批注布局，方便反馈修改意见。问题字符复制和 TXT 导出保留原始字符身份，不以简繁参考字替换。
-
-## 独立运行，无需配置开发环境
-
-- **Windows**：独立 x64 EXE，双击运行，无需安装 Python 或 Qt。运行时会自动解压所需组件至系统临时目录，不是安装器。
-- **macOS**：独立应用，提供 DMG 和 ZIP；使用 DMG 时，将应用拖入“应用程序”，推出 DMG 后即可独立运行。
-
-运行库和所需资源随应用提供，不需要在应用旁保留依赖文件夹，首次启动无需联网下载运行组件。字体、工程、批注及输出在本地处理；检查更新需要联网，并由用户主动发起。本期不自动安装或覆盖正在运行的应用。
-
-## 下载与系统要求
-
-请从官方发布页下载对应系统版本：
-
-- [GitHub 官方发布页](https://github.com/dutao6678/zidongli-font-proof/releases)
-- [Gitee 官方发布页](https://gitee.com/postman7729/zidongli-font-proof/releases)
-
-| 平台 | 当前正式版本 | GitHub 下载 | Gitee 下载 |
+| 平台 | 正式版本 | GitHub 下载 | Gitee 下载 |
 |---|---|---|---|
-| Windows x64 | 0.3.155（170） | [独立 EXE](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.155/ZidongliFontProof-Windows-x64.exe) | [独立 EXE](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.155/ZidongliFontProof-Windows-x64.exe) |
-| macOS | 0.3.154（169） | [DMG](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.zip) | [DMG](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.zip) |
+| Windows x64 | 0.3.155（170） | [EXE](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.155/ZidongliFontProof-Windows-x64.exe) | [EXE](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.155/ZidongliFontProof-Windows-x64.exe) |
+| macOS | 0.3.154（169） | [DMG](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.dmg) | [DMG](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.dmg) |
 
-**Windows**：Windows 10 1809 x64 为依赖下限，已在 Windows 11 26100 x64 验证指定功能；最低系统、无开发环境干净机器及完整系统中文输入法仍待分别验收。尚无 Windows ARM64 原生包，EXE 尚未进行 Authenticode 代码签名。
+## 软件界面展示
 
-**macOS**：最低要求 **macOS 15.0**。提供 Universal 2 应用，已检查包内原生依赖的 arm64／x86_64 架构，并在 Apple Silicon／macOS 26.1 完成人工界面验收和发行包完整性核验；具体安装与验证范围见本版发行说明。Intel Mac、macOS 15 实机、多屏及无开发环境干净机器尚未完整验收。
+### 01 · 字库浏览与校对
 
-**macOS 版本尚未完成 Developer ID 签名与 Apple 公证；目前仅通过 ad-hoc 签名完整性检查，DMG 也未签名／公证。** 实体打印仍待设备验收，打印预览不能代替实际出纸验证。更完整的兼容范围请查看各版本发行说明。
+浏览字格，在单字画布上标注问题，并记录校对状态。
 
-请勿将仓库自动生成的“Source code ZIP／tar.gz”当作应用安装包；它们只包含本仓库的公开资料。
+![字库浏览与校对](SCREENSHOT.png)
 
-### 下载校验
 
-两渠道对应附件已完成匿名完整下载核验，文件内容一致：
+### 02 · 批注与字形调整
 
-- **Windows EXE**：50,583,985 字节。两渠道文件名均为 `ZidongliFontProof-Windows-x64.exe`。
-  SHA256：`99f1d3f10859d46bf072dd1a7a3e4bf35e256f37852e036b82792203dbb325c7`
-- **Mac DMG**：71,825,606 字节。  
-  SHA256：`1a30d63e121a7c71933c25e59a164ff63e2bdd3683eb13c9797016a435650f8d`
-- **Mac ZIP**：72,013,250 字节。  
-  SHA256：`4f98088ebea6ce7876cd69afd39bd3e4847e5a7aa8bebaeb15ba4c70a4df1efd`
+选择并调整字形的位置与大小，配合辅助批注说明修改意见。
 
-应用内“帮助 → 检查更新”读取正式签名清单；Mac 0.3.154 安装包已公开，Mac 更新清单尚待生产签名及发布，当前可从以上官方链接手动下载。清单签名与应用代码签名／Apple 公证是不同事项。
+![批注与字形调整](SCREENSHOT-ADJUST.png)
 
-**Mac 0.3.154 新增**：COLR v0／CPAL原始彩色与单色切换、只读字体原色、自定义参考资料TXT／TSV／CSV导入及工程内嵌；不代表Windows已经同步，不支持COLR v1／SVG彩色渲染，也不附赠第三方字体或码表。
+## 主要功能
 
-**Mac工程兼容提醒**：变体独立记录使用v8；原始彩色工程使用v9，需150及更新版；含自定义参考资料使用v10，需153及更新版。149不能打开v9/v10工程，升级与回退前请保留工程及源字体备份。
+### 字库浏览
 
-**Windows 0.3.155（170）已同步**：COLR v0／CPAL彩色显示、原色复制与自定义参考资料导入/内嵌。原始彩色v9及资料v10工程不能由旧Windows146读取，请保留原工程备份。下载后保存并退出，手动备份及替换EXE；不是自动安装。详情见[Windows发行说明](https://github.com/dutao6678/zidongli-font-proof/releases/tag/v0.3.155)。
+支持 TTF、OTF、Glyphs 字体文件，提供字符搜索、拼音、Unicode 和简繁参考。
 
-## 使用说明与联系
+### 标注与调整
 
-### 版本更新
+支持文字、箭头、矩形、椭圆、直线、弧线、自由画笔和图片批注，以及字形位置、大小调整。
 
-- [Windows正式Release：0.3.155（170）](https://github.com/dutao6678/zidongli-font-proof/releases/tag/v0.3.155)
-- [Mac正式Release：0.3.154（169）](https://github.com/dutao6678/zidongli-font-proof/releases/tag/v0.3.154)
+### 问题字管理
 
-- [使用说明](USAGE.md) · [联系与反馈](#联系与反馈) · [使用条款](TERMS.md)
-- [第三方许可说明](THIRD_PARTY.md) · [许可资料](LICENSES.txt) · [原生组件许可](NATIVE_LICENSES.txt)
+记录校对状态与修改意见，集中查看问题字，支持保存和继续校对。
 
-**应用免费发布，应用源码不公开。使用及分发规则请参阅仓库中的使用条款。第三方组件保留各自原有许可权利。**
+### 导出与交接
 
-### 联系与反馈
+独立 `.zproof` 工程，支持 PDF、PNG、TXT 导出和打印预览。源字体始终只读。
 
-作者／品牌：字动力。邮箱：[outlook5588@gmail.com](mailto:outlook5588@gmail.com)，或在任一官方仓库提交Issue。
+## 使用说明与兼容提醒
 
-请提供应用版本与构建号、操作系统版本（Windows或macOS）、显示缩放、复现步骤及预期／实际结果。性能问题请注明是字格滚动、抓手、对象移动还是控制点缩放。
+- [使用说明](USAGE.md) · [Windows 正式 Release](https://github.com/dutao6678/zidongli-font-proof/releases/tag/v0.3.155) · [macOS 正式 Release](https://github.com/dutao6678/zidongli-font-proof/releases/tag/v0.3.154)
+- Windows 为独立 EXE，无需安装 Python 或 Qt；Windows 10 1809 x64 为依赖要求下限。当前 EXE 未完成 Authenticode 代码签名。
+- macOS 最低要求 15.0。使用 DMG 时，将应用拖入“应用程序”，推出 DMG 后启动；也可下载 ZIP：[GitHub ZIP](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.zip) · [Gitee ZIP](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.zip)。当前版本未完成 Developer ID 签名及 Apple 公证。
+- `.zproof` 工程默认不嵌入源字体，交接时需保留对应字体。新版工程中的新增数据可能无法由旧版读取，升级或回退前建议备份。
+- 参考信息受数据覆盖范围影响；部分 `.glyphs` 特殊结构暂不支持，智能部件尚未正式支持。具体兼容范围以对应正式 Release 为准；Intel Mac、最低系统实机及实体打印仍待分别验收。
+- 检查更新仅在用户主动操作时联网，不自动安装或替换应用。请下载 EXE、DMG 或应用 ZIP，不要把仓库自动生成的源码压缩包当作安装包。
 
-请先备份重要工程；公开反馈不要上传私人字体、完整用户工程、个人资料、密钥或运行目录。优先使用合成样本及可公开截图，是否提供私有材料由权利人决定。
+## 联系与反馈
 
-## 界面示例
+邮箱：[outlook5588@gmail.com](mailto:outlook5588@gmail.com) · [GitHub Issues](https://github.com/dutao6678/zidongli-font-proof/issues) · [Gitee Issues](https://gitee.com/postman7729/zidongli-font-proof/issues)
 
-![Windows 校对界面](SCREENSHOT.png)
+反馈请提供应用版本与构建号、系统版本、显示缩放、复现步骤及预期／实际结果；性能问题请注明涉及字格滚动、抓手、对象移动还是控制点缩放。
 
-截图使用自绘几何测试字形，不含用户工程或私人字体文件。
+请先备份重要工程。公开反馈请勿上传私人字体、完整用户工程、个人资料、密钥或运行目录；优先使用可公开的测试样本和截图，私有材料由权利人决定是否提供。
+
+## 使用条款和第三方许可
+
+软件免费使用，应用源码不公开；使用及分发规则请参阅[使用条款](TERMS.md)。第三方组件保留原有许可。
+
+[第三方许可说明](THIRD_PARTY.md) · [许可资料](LICENSES.txt) · [原生组件许可](NATIVE_LICENSES.txt)
