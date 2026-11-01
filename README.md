@@ -46,7 +46,7 @@ TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 
 
 | 平台 | 当前正式版本 | GitHub 下载 | Gitee 下载 |
 |---|---|---|---|
-| Windows x64 | 0.3.92（107） | [独立 EXE](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.92/ZidongliFontProof-Windows-x64.exe) | [独立 EXE](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.92/%E5%AD%97%E5%8A%A8%E5%8A%9B%E5%AD%97%E4%BD%93%E6%A0%A1%E5%AF%B9.exe) |
+| Windows x64 | 0.3.155（170） | [独立 EXE](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.155/ZidongliFontProof-Windows-x64.exe) | [独立 EXE](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.155/ZidongliFontProof-Windows-x64.exe) |
 | macOS | 0.3.154（169） | [DMG](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.zip) | [DMG](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.zip) |
 
 **Windows**：Windows 10 1809 x64 为依赖下限，已在 Windows 11 26100 x64 验证指定功能；最低系统、无开发环境干净机器及完整系统中文输入法仍待分别验收。尚无 Windows ARM64 原生包，EXE 尚未进行 Authenticode 代码签名。
@@ -61,8 +61,8 @@ TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 
 
 两渠道对应附件已完成匿名完整下载核验，文件内容一致：
 
-- **Windows EXE**：48,929,466 字节。GitHub 文件名为 `ZidongliFontProof-Windows-x64.exe`，Gitee 为 `字动力字体校对.exe`。  
-  SHA256：`94df6bd0ea69190370484d5fb6ec980ad12d4eb150aafa7da15e67d11c541a05`
+- **Windows EXE**：50,583,985 字节。两渠道文件名均为 `ZidongliFontProof-Windows-x64.exe`。
+  SHA256：`99f1d3f10859d46bf072dd1a7a3e4bf35e256f37852e036b82792203dbb325c7`
 - **Mac DMG**：71,825,606 字节。  
   SHA256：`1a30d63e121a7c71933c25e59a164ff63e2bdd3683eb13c9797016a435650f8d`
 - **Mac ZIP**：72,013,250 字节。  
@@ -73,6 +73,8 @@ TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 
 **Mac 0.3.154 新增**：COLR v0／CPAL原始彩色与单色切换、只读字体原色、自定义参考资料TXT／TSV／CSV导入及工程内嵌；不代表Windows已经同步，不支持COLR v1／SVG彩色渲染，也不附赠第三方字体或码表。
 
 **Mac工程兼容提醒**：变体独立记录使用v8；原始彩色工程使用v9，需150及更新版；含自定义参考资料使用v10，需153及更新版。149不能打开v9/v10工程，升级与回退前请保留工程及源字体备份。
+
+**Windows 0.3.155（170）已同步**：COLR v0／CPAL彩色显示、原色复制与自定义参考资料导入/内嵌。原始彩色v9及资料v10工程不能由旧Windows146读取，请保留原工程备份。下载后保存并退出，手动备份及替换EXE；不是自动安装。详情见[Windows发行说明](https://github.com/dutao6678/zidongli-font-proof/releases/tag/v0.3.155)。
 
 ## 使用说明与联系
 
