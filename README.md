@@ -47,7 +47,7 @@ TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 
 | 平台 | 当前正式版本 | GitHub 下载 | Gitee 下载 |
 |---|---|---|---|
 | Windows x64 | 0.3.92（107） | [独立 EXE](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.92/ZidongliFontProof-Windows-x64.exe) | [独立 EXE](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.92/%E5%AD%97%E5%8A%A8%E5%8A%9B%E5%AD%97%E4%BD%93%E6%A0%A1%E5%AF%B9.exe) |
-| macOS | 0.3.149（164） | [DMG](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.149/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.149/ZidongliFontProof-macOS-universal2.zip) | [DMG](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.149/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.149/ZidongliFontProof-macOS-universal2.zip) |
+| macOS | 0.3.154（169） | [DMG](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://github.com/dutao6678/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.zip) | [DMG](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.dmg) · [ZIP](https://gitee.com/postman7729/zidongli-font-proof/releases/download/v0.3.154/ZidongliFontProof-macOS-universal2.zip) |
 
 **Windows**：Windows 10 1809 x64 为依赖下限，已在 Windows 11 26100 x64 验证指定功能；最低系统、无开发环境干净机器及完整系统中文输入法仍待分别验收。尚无 Windows ARM64 原生包，EXE 尚未进行 Authenticode 代码签名。
 
@@ -63,14 +63,16 @@ TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 
 
 - **Windows EXE**：48,929,466 字节。GitHub 文件名为 `ZidongliFontProof-Windows-x64.exe`，Gitee 为 `字动力字体校对.exe`。  
   SHA256：`94df6bd0ea69190370484d5fb6ec980ad12d4eb150aafa7da15e67d11c541a05`
-- **Mac DMG**：71,769,172 字节。  
-  SHA256：`34d910a59e75aea0a7a819034d89824dbcad3587192d2777f5fff3eafcfb2554`
-- **Mac ZIP**：71,951,851 字节。  
-  SHA256：`ac845440df475523c49b7c081610c1b5baeede3a7f12bd370be518fb3e6769b2`
+- **Mac DMG**：71,825,606 字节。  
+  SHA256：`1a30d63e121a7c71933c25e59a164ff63e2bdd3683eb13c9797016a435650f8d`
+- **Mac ZIP**：72,013,250 字节。  
+  SHA256：`4f98088ebea6ce7876cd69afd39bd3e4847e5a7aa8bebaeb15ba4c70a4df1efd`
 
-应用内“帮助 → 检查更新”读取正式签名清单；Mac 0.3.149 安装包已公开，Mac 更新清单尚待生产签名及发布，当前可从以上官方链接手动下载。清单签名与应用代码签名／Apple 公证是不同事项。
+应用内“帮助 → 检查更新”读取正式签名清单；Mac 0.3.154 安装包已公开，Mac 更新清单尚待生产签名及发布，当前可从以上官方链接手动下载。清单签名与应用代码签名／Apple 公证是不同事项。
 
-**Mac工程兼容提醒**：启用变体独立记录后保存为v8，旧Mac112不能读取；升级与回退前请保留工程及源字体备份。
+**Mac 0.3.154 新增**：COLR v0／CPAL原始彩色与单色切换、只读字体原色、自定义参考资料TXT／TSV／CSV导入及工程内嵌；不代表Windows已经同步，不支持COLR v1／SVG彩色渲染，也不附赠第三方字体或码表。
+
+**Mac工程兼容提醒**：变体独立记录使用v8；原始彩色工程使用v9，需150及更新版；含自定义参考资料使用v10，需153及更新版。149不能打开v9/v10工程，升级与回退前请保留工程及源字体备份。
 
 ## 使用说明与联系
 
