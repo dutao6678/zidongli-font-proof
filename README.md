@@ -78,13 +78,23 @@ TXT 可集中列出问题字符，便于整批复制到后续处理工具；PDF 
 
 ## 使用说明与联系
 
-- [使用说明](USAGE.md) · [反馈方式](FEEDBACK.md) · [使用条款](TERMS.md)
-- [第三方许可说明](THIRD_PARTY.md) · [许可资料](LICENSES.txt) · [原生组件许可](NATIVE_LICENSES.txt)
-- 联系作者：[**outlook5588@gmail.com**](mailto:outlook5588@gmail.com)，也可在任一官方仓库提交 Issue。
+### 版本更新
 
-公开反馈时，请勿上传私人字体、工程、密钥或个人资料。
+- [Windows正式Release：0.3.155（170）](https://github.com/dutao6678/zidongli-font-proof/releases/tag/v0.3.155)
+- [Mac正式Release：0.3.154（169）](https://github.com/dutao6678/zidongli-font-proof/releases/tag/v0.3.154)
+
+- [使用说明](USAGE.md) · [联系与反馈](#联系与反馈) · [使用条款](TERMS.md)
+- [第三方许可说明](THIRD_PARTY.md) · [许可资料](LICENSES.txt) · [原生组件许可](NATIVE_LICENSES.txt)
 
 **应用免费发布，应用源码不公开。使用及分发规则请参阅仓库中的使用条款。第三方组件保留各自原有许可权利。**
+
+### 联系与反馈
+
+作者／品牌：字动力。邮箱：[outlook5588@gmail.com](mailto:outlook5588@gmail.com)，或在任一官方仓库提交Issue。
+
+请提供应用版本与构建号、操作系统版本（Windows或macOS）、显示缩放、复现步骤及预期／实际结果。性能问题请注明是字格滚动、抓手、对象移动还是控制点缩放。
+
+请先备份重要工程；公开反馈不要上传私人字体、完整用户工程、个人资料、密钥或运行目录。优先使用合成样本及可公开截图，是否提供私有材料由权利人决定。
 
 ## 界面示例
 

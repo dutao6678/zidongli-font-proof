@@ -8,4 +8,4 @@ Single-file Windows x64 EXE, not an installer. Both anonymous downloads were ver
 
 Tested scope: targeted checks and user acceptance on Windows 11 build 26100 x64. Windows 10 1809 x64 is the dependency floor, not a verified minimum-system test. Clean-machine, full system IME and physical-print testing remain pending. No native Windows ARM64 package. The EXE has no Authenticode signature. Both feeds use Ed25519-signed update manifests, which is separate from code signing. Manual checks only; save and exit before replacing the EXE, with no automatic installation.
 
-See [Chinese README](README.md), [usage](USAGE.md), [release notes](RELEASE_NOTES.md), [terms](TERMS.md), [third-party licenses](THIRD_PARTY.md) and [feedback](FEEDBACK.md). Free use does not grant an open-source license for the application. Contact: outlook5588@gmail.com.
+See [Chinese README](README.md), [usage](USAGE.md), [platform release pages](USAGE.md#版本更新), [terms](TERMS.md), [third-party licenses](THIRD_PARTY.md) and [contact and feedback](README.md#联系与反馈). Free use does not grant an open-source license for the application. Contact: outlook5588@gmail.com.
